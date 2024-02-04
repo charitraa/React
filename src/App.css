@@ -125,13 +125,13 @@
   font-weight: bold;
 }
 .first-image{
-  background-image: url('image/8EDB5ED7-7829-4345-9F34-0D52B4D72759.JPEG');
+  background-image: url('assest/8EDB5ED7-7829-4345-9F34-0D52B4D72759.JPEG');
 }
 .second-image{
-  background-image: url('image/IMG_6697.jpg');
+  background-image: url('assest/IMG_6697.jpg');
 }
 .third-image{
-  background-image: url('image/IMG_7150.jpg');
+  background-image: url('assest/IMG_7150.jpg');
 }
 
 .first-image,.second-image,.third-image{
