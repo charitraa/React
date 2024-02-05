@@ -1,19 +1,24 @@
 // import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import './assest/IMG_6697.jpg';
-import './assest/Logo.png';
-import './assest/Screenshot from 2024-01-30 15-09-06.png'
-import './assest/Screenshot from 2024-01-30 15-09-30.png'
-import './assest/Screenshot from 2024-01-30 15-09-45.png'
-import './assest/8EDB5ED7-7829-4345-9F34-0D52B4D72759.JPEG'
+// import ' ./assest/IMG_6697.jpg';
+import img1 from './assest/Logo.png';
+import img2 from './assest/Screenshot from 2024-01-30 15-09-06.png'
+import img3 from './assest/Screenshot from 2024-01-30 15-09-30.png'
+import img4 from './assest/Screenshot from 2024-01-30 15-09-45.png'
+import img5 from './assest/IMG_6825.jpg'
+import img6 from './assest/IMG_6697.jpg'
+import img7 from './assest/IMG_7150.jpg'
+import img8 from './assest/IMG_7329.jpg'
+import img9 from './assest/flower.JPG'
 
 function App() {
   return (
     <>
         <div className="nav">
             <div className="title">
-                <img src="assest/Logo.png" alt=""/>
-                <h4>Takris Crochet</h4>
+                <img src={img1} alt=""/>
+                <h4>Takris Crochet</h4>p
             </div>
             <div className="link">
                 <a href="/">About</a>
@@ -56,7 +61,7 @@ function App() {
                 <h1>Latest posts</h1>
                 <div className="posts">
                     <div className="post-first">
-                        <img src="Screenshot from 2024-01-30 15-09-06.png" alt=""/>
+                        <img src={img2}alt=""/>
                         <h3>The Art of Connection</h3>
                         <p>In the ever-evolving world, the art of forging genuine connections remains timeless. Whether it’s
                             with colleagues, clients, or partners, establishing a genuine rapport paves the way for
@@ -64,7 +69,7 @@ function App() {
                         </p>
                     </div>
                     <div className="post-second">
-                        <img src="Screenshot from 2024-01-30 15-09-30.png" alt=""/>
+                        <img src={img3} alt=""/>
                         <h3>Beyond the Obstacle</h3>
                         <p>Challenges in business are a given, but it’s our response to them that defines our trajectory.
                             Looking beyond the immediate obstacle, there lies a realm of opportunity and learning.
@@ -72,7 +77,7 @@ function App() {
                         </p>
                     </div>
                     <div className="post-third">
-                        <img src="Screenshot from 2024-01-30 15-09-45.png" alt=""/>
+                        <img src={img4} alt=""/>
                         <h3>Growth Unlocked</h3>
                         <p>Every business has a unique potential waiting to be tapped. Recognizing the keys to unlock this
                             growth can set an enterprise on the path to unprecedented success. <span>Read more</span>
@@ -83,12 +88,12 @@ function App() {
         </section>
         <section className="section-photo">
             <div className="main-photos">
-                <img src="assest/951233AA-F75C-4972-93C9-57A186069A87.JPG" alt="" height="600px" width="800px"/>
+                <img src={img9} alt="" height="600px" width="800px"/>
                 <div className="four-photo">
-                    <img src="assest/IMG_6825.jpg" alt="" height="285px" width="285px"/>
-                    <img src="assest/IMG_7329.jpg" alt="" height="285px" width="285px"/>
-                    <img src="assest/IMG_6697.jpg" alt="" height="285px" width="285px"/>
-                    <img src="assest/IMG_7150.jpg" alt="" height="285px" width="285px"/>
+                    <img src={img5} alt="" height="285px" width="285px"/>
+                    <img src={img6} alt="" height="285px" width="285px"/>
+                    <img src={img7} alt="" height="285px" width="285px"/>
+                    <img src={img8} alt="" height="285px" width="285px"/>
                 </div>
             </div>
         </section>
