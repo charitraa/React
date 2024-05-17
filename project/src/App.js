@@ -1,5 +1,5 @@
 import './App.css'
-
+import React from 'react'
 function App () {
   let name = 'Charitra Shrestha'
   let currrDate = new Date().toLocaleDateString()
