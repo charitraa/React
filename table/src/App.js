@@ -4,45 +4,46 @@ import axios from 'axios'
 import './App.css'
 
 function App () {
-  const [data, setData] = useState()
+  const [data, setData] = useState([])
 
   useEffect(() => {
     // Fetch data from the API using axios
     axios
-      .get('http://127.0.0.1:8000/todo-list/')
+      .get('http://universities.hipolabs.com/search?country=United+States')
       .then(response => {
         const res = response.data
+        console.log(res)
         setData(res)
-        console.log(data)
       })
       .catch(error => {
         console.error('Error fetching data:', error)
       })
-  }, [])
+  }, [data])
+  console.log(data)
 
   const columns = [
     {
-      name: 'Title',
-      selector: row => row.title
+      name: 'NAme',
+      selector: row => row.name
     },
     {
-      name: 'Year',
-      selector: row => row.year
+      name: 'country',
+      selector: row => row.country
     }
   ]
 
-  const datas = [
-    {
-      id: 1,
-      title: 'Beetlejuice',
-      year: '1988'
-    },
-    {
-      id: 2,
-      title: 'Ghostbusters',
-      year: '1984'
-    }
-  ]
+  // const datas = [
+  //   {
+  //     id: 1,
+  //     title: 'Beetlejuice',
+  //     year: '1988'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Ghostbusters',
+  //     year: '1984'
+  //   }
+  // ]
 
   return (
     <div className='App'>
