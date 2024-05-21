@@ -14,7 +14,12 @@ function App() {
       return [...data, inputList];
     
     } 
-  )  }
+    )
+  }
+  
+  let Delete = () => { 
+    
+  }
   return <div>
     <div className="main_div">
       <div className="center_div">
@@ -26,7 +31,7 @@ function App() {
       </div>
       <ol>
         {Items.map((item) => {
-          return <li> { item}</li>
+          return <li><span onClick={Delete}>x</span> { item}</li>
         })}
       </ol>
     </div>
