@@ -15,6 +15,11 @@ def gettotalincome(request):
     return Response({'total_income': total_income}, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
+def gettotalexpenses(request):
+    total_expense = Transaction.objects.filter(amount__lt=0).aggregate(total_expense=Sum('amount'))['total_expense'] or 0
+    return Response({'total_expense': total_expense}, status=status.HTTP_200_OK)
+
+@api_view(['GET'])
 def transactionView(request):
     transaction = Transaction.objects.all()
     serializer = TransationSerializer(transaction, many=True)
