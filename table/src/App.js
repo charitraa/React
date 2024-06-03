@@ -9,21 +9,24 @@ function App () {
   useEffect(() => {
     // Fetch data from the API using axios
     axios
-      .get('http://universities.hipolabs.com/search?country=United+States')
+      .get('http://127.0.0.1:8000/todo-list/')
       .then(response => {
+        if (!response.ok) {
+          console.log('slight server error')
+        }
         const res = response.data
-        console.log(res)
-        setData(res)
+        return res.json()
       })
-      .catch(error => {
-        console.error('Error fetching data:', error)
+      .then(function (datas) {
+        setData(datas)
+        console.log(datas)
       })
   }, [data])
   console.log(data)
 
   const columns = [
     {
-      name: 'NAme',
+      name: 'Name',
       selector: row => row.name
     },
     {
@@ -31,19 +34,6 @@ function App () {
       selector: row => row.country
     }
   ]
-
-  // const datas = [
-  //   {
-  //     id: 1,
-  //     title: 'Beetlejuice',
-  //     year: '1988'
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Ghostbusters',
-  //     year: '1984'
-  //   }
-  // ]
 
   return (
     <div className='App'>
