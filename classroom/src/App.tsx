@@ -1,18 +1,17 @@
-import Navbar from '../src/Navbar/Navbar'
-import '../src/Navbar/Navbar.css'
+import Navbar from '../src/Navbar/Navbar';
+import '../src/Navbar/Navbar.css';
 import './App.css';
 import '../src/index.css';
-import back from '../src/assets/background.jpg'
-import Boy from '../src/assets/boy.jpg'
-import saff from '../src/assets/saff.jpg'
-import man from '../src/assets/man.jpg'
-import women from '../src/assets/women.jpg'
+import back from '../src/assets/background.jpg';
+import Boy from '../src/assets/boy.jpg';
+import saff from '../src/assets/saff.jpg';
+import man from '../src/assets/man.jpg';
+import women from '../src/assets/women.jpg';
+import Counter from './counter/Counter';
 function App() {
-
-
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <section id="home" className="section">
         <div className="relative isolate px-6 pt-14 lg:px-8 text-white"
           style={{
@@ -223,9 +222,10 @@ function App() {
           </form>
         </div>
 
-      </section>
-    </div >
-  )
+      </section> */}
+      <Counter />
+    </div>
+  );
 }
 
-export default App
+export default App;
