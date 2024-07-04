@@ -12,7 +12,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo"><img src={logo} alt=""  height={75} width={200}/></div>
+      <div className="navbar-logo">
+        <img src={logo} alt="" height={75} width={200} />
+      </div>
       <button className="navbar-toggle" onClick={toggleMenu}>
         &#9776;
       </button>
