@@ -1,13 +1,14 @@
-import Navbar from '../src/Navbar/Navbar';
+// import Navbar from '../src/Navbar/Navbar';
 import '../src/Navbar/Navbar.css';
 import './App.css';
 import '../src/index.css';
-import back from '../src/assets/background.jpg';
-import Boy from '../src/assets/boy.jpg';
-import saff from '../src/assets/saff.jpg';
-import man from '../src/assets/man.jpg';
-import women from '../src/assets/women.jpg';
+// import back from '../src/assets/background.jpg';
+// import Boy from '../src/assets/boy.jpg';
+// import saff from '../src/assets/saff.jpg';
+// import man from '../src/assets/man.jpg';
+// import women from '../src/assets/women.jpg';
 import Counter from './counter/Counter';
+import Counterfunction from '../src/counter/CounterFunction';
 function App() {
   return (
     <div>
@@ -224,6 +225,7 @@ function App() {
 
       </section> */}
       <Counter />
+      <Counterfunction />
     </div>
   );
 }
