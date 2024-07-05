@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 interface TimerState {
   timerValue: number;
@@ -35,7 +35,7 @@ export default class Counter extends Component<{}, TimerState> {
     return (
       <div>
         <h1>Timer: {this.state.timerValue} seconds</h1>
-        <button onClick={this.startTimer}>Start Timer</button>
+        <button onClick={this.startTimer}>Start Timer</button> <br />
         <button onClick={this.stopTimer}>Stop Timer</button>
       </div>
     );
