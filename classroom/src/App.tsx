@@ -9,6 +9,7 @@ import '../src/index.css';
 // import women from '../src/assets/women.jpg';
 import Counter from './counter/Counter';
 import Counterfunction from '../src/counter/CounterFunction';
+import GreetComponent from './props/GreetComponent';
 function App() {
   return (
     <div>
@@ -226,6 +227,7 @@ function App() {
       </section> */}
       <Counter />
       <Counterfunction />
+      <GreetComponent name="ram" />
     </div>
   );
 }
