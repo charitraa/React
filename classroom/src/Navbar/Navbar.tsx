@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import './Navbar.css';
 
@@ -19,10 +19,18 @@ const Navbar = () => {
         &#9776;
       </button>
       <div className="navbar-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <NavLink to="/">
+          <span>Home</span>
+        </NavLink>
+        <NavLink to="/about">
+          <span>About</span>
+        </NavLink>
+        <NavLink to="/service">
+          <span>Service</span>
+        </NavLink>
+        <NavLink to="/contact">
+          <span>Contact</span>
+        </NavLink>
       </div>
     </nav>
   );
