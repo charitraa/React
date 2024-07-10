@@ -9,7 +9,7 @@ const ToggleParent = () => {
   };
 
   return (
-    <div>
+    <div className="text-center mt-8">
       <ToggleChild isOn={isOn} toggleSwitch={toggleSwitch} />
     </div>
   );

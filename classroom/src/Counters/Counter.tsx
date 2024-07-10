@@ -13,7 +13,7 @@ const CounterParent = () => {
   };
 
   return (
-    <div>
+    <div className="text-center mt-8">
       <CounterChild
         count={count}
         incrementCounter={incrementCounter}
