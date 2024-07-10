@@ -227,7 +227,7 @@ function App() {
       </section> */}
       <Counter />
       <Counterfunction />
-      <GreetComponent name="ram" />
+      <GreetComponent name="ram" caste="shrestha" />
     </div>
   );
 }

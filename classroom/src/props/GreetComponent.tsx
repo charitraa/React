@@ -1,9 +1,14 @@
 interface Props {
   name: string;
+  caste: string;
 }
 
-const GreetComponent = ({ name }: Props) => {
-  return <div>hello, {name}! we are learning props in react</div>;
+const GreetComponent = ({ name, caste }: Props) => {
+  return (
+    <div>
+      hello, {name} {caste}! we are learning props in react
+    </div>
+  );
 };
 
 export default GreetComponent;
