@@ -10,6 +10,9 @@ import '../src/index.css';
 import Counter from './counter/Counter';
 import Counterfunction from '../src/counter/CounterFunction';
 import GreetComponent from './props/GreetComponent';
+import Counters from './Counters/Counter';
+import Message from './Message/Message';
+import Toggle from './Toogle/Toggle';
 function App() {
   return (
     <div>
@@ -223,11 +226,13 @@ function App() {
             </div>
           </form>
         </div>
-
       </section> */}
       <Counter />
       <Counterfunction />
       <GreetComponent name="ram" caste="shrestha" />
+      <Counters />
+      <Message />
+      <Toggle />
     </div>
   );
 }
