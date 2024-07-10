@@ -19,8 +19,8 @@ const CounterParent = () => {
         incrementCounter={incrementCounter}
         decrementCounter={decrementCounter}
       />
-      <button onClick={incrementCounter}>Increment</button>
-      <button onClick={decrementCounter}>Decrement</button>
+      {/* <button onClick={incrementCounter}>Increment</button>
+      <button onClick={decrementCounter}>Decrement</button> */}
     </div>
   );
 };

@@ -11,7 +11,6 @@ const ToggleParent = () => {
   return (
     <div>
       <ToggleChild isOn={isOn} toggleSwitch={toggleSwitch} />
-      <button onClick={toggleSwitch}>Toggle Switch</button>
     </div>
   );
 };
