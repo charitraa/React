@@ -3,6 +3,7 @@ import '../src/Navbar/Navbar.css';
 import './App.css';
 import '../src/index.css';
 import Routes from './Routes/Routes';
+import Todo from '../src/Todo-App/TodoApp';
 // import back from '../src/assets/background.jpg';
 // import Boy from '../src/assets/boy.jpg';
 // import saff from '../src/assets/saff.jpg';
@@ -395,7 +396,8 @@ function App() {
       <Message />
       <Toggle />
       */}
-      <Routes />
+      {/* <Routes /> */}
+      <Todo />
     </div>
   );
 }
