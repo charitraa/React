@@ -2,7 +2,8 @@
 import '../src/Navbar/Navbar.css';
 import './App.css';
 import '../src/index.css';
-import Routes from './Routes/Routes';
+// import Routes from './Routes/Routes';
+import Contact from './Form/Contact';
 // import Todo from '../src/Todo-App/TodoApp';
 // import Counter from './counter/Counter';
 // import Counterfunction from '../src/counter/CounterFunction';
@@ -20,8 +21,9 @@ function App() {
       <Message />
       <Toggle />
        */}
-      <Routes />
+      {/* <Routes /> */}
       {/* <Todo /> */}
+      <Contact />
     </div>
   );
 }

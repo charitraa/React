@@ -20,7 +20,7 @@ class LifecycleComponent extends Component<Props, State> {
     console.log('Component did mount');
   }
 
-  componentDidUpdate(prevProps: Props, prevState: State) {
+  componentDidUpdate(_prevProps: Props, prevState: State) {
     if (prevState.count !== this.state.count) {
       console.log('Component did update');
     }
