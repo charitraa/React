@@ -3,7 +3,7 @@ import Home from '../Pages/Home';
 import About from '../Pages/About';
 import Service from '../Pages/Service';
 import Contact from '../Pages/Contact';
-
+import Product from '../Pages/Product';
 export default function RoutesNav() {
   return (
     <>
@@ -12,6 +12,7 @@ export default function RoutesNav() {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </>
   );

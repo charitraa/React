@@ -31,7 +31,7 @@ const TodoApp: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-4 bg-white shadow-lg rounded-lg">
-      <h1 className="text-4xl font-bold mb-4 text-center text-blue-500">
+      <h1 className="text-4xl font-bold mb-4 text-center text-red-600">
         Todo App
       </h1>
       <div className="flex mb-4">
@@ -44,7 +44,7 @@ const TodoApp: React.FC = () => {
         />
         <button
           onClick={addTodo}
-          className="ml-2 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          className="ml-2 p-2 bg-black text-white rounded-lg hover:bg-blue-600 transition"
         >
           Add
         </button>
