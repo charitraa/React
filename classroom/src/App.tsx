@@ -8,6 +8,7 @@ import '../src/index.css';
 // import SIgnup from './Form/SIgnup';
 
 import FormValidation from '../src/FormValidation/FormValidation';
+import Event from '../src/Event/Event';
 // import Todo from '../src/Todo-App/TodoApp';
 // import Counter from './counter/Counter';
 // import Counterfunction from '../src/counter/CounterFunction';
@@ -30,7 +31,8 @@ function App() {
       {/* <Contact />
       <Login />
       <SIgnup /> */}
-      <FormValidation />
+      {/* <FormValidation /> */}
+      <Event />
     </div>
   );
 }
