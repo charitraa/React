@@ -3,7 +3,11 @@ import '../src/Navbar/Navbar.css';
 import './App.css';
 import '../src/index.css';
 // import Routes from './Routes/Routes';
-import Contact from './Form/Contact';
+// import Contact from './Form/Contact';
+// import Login from './Form/Login';
+// import SIgnup from './Form/SIgnup';
+
+import FormValidation from '../src/FormValidation/FormValidation';
 // import Todo from '../src/Todo-App/TodoApp';
 // import Counter from './counter/Counter';
 // import Counterfunction from '../src/counter/CounterFunction';
@@ -23,7 +27,10 @@ function App() {
        */}
       {/* <Routes /> */}
       {/* <Todo /> */}
-      <Contact />
+      {/* <Contact />
+      <Login />
+      <SIgnup /> */}
+      <FormValidation />
     </div>
   );
 }
