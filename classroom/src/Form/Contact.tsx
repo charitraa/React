@@ -51,7 +51,6 @@ const Contact: React.FC = () => {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      // Handle form submission
       console.log('Form data submitted:', formData);
     }
   };
