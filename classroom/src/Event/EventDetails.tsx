@@ -1,4 +1,3 @@
-// src/components/EventDetails.tsx
 import React from 'react';
 import { CustomEvent } from './customEvent';
 
@@ -8,10 +7,10 @@ interface EventDetailsProps {
 
 const EventDetails: React.FC<EventDetailsProps> = ({ event }) => {
   return (
-    <div className="mt-4 p-4 border rounded">
-      <h2 className="text-xl font-bold">{event.name}</h2>
-      <p>Date: {event.date}</p>
-      <p>Location: {event.location}</p>
+    <div className="mt-4 p-4 border rounded shadow">
+      <h2 className="text-2xl font-bold">{event.name}</h2>
+      <p className="text-lg">Date: {event.date}</p>
+      <p className="text-lg">Location: {event.location}</p>
     </div>
   );
 };
