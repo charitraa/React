@@ -1,5 +1,5 @@
 import React from 'react';
-import { CustomEvent } from './customEvent';
+import { CustomEvent } from './CustomEvent';
 
 interface EventListProps {
   events: CustomEvent[];

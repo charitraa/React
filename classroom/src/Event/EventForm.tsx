@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CustomEvent } from './customEvent';
+import { CustomEvent } from './CustomEvent';
 
 interface EventFormProps {
   onAddEvent: (event: CustomEvent) => void;
