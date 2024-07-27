@@ -1,5 +1,13 @@
 {
-  "semi": true,
-  "singleQuote": true,
-  "printWidth": 80
+  "name": "ravi shrestha",
+  "address":{
+	permat:{
+},
+temp:{
+
+}
+prov:{
+}
+	}
+  "age": "80"
 }
